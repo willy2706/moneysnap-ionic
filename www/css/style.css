@@ -1,6 +1,37 @@
 .pane {
-  background: url('/img/main.png') no-repeat center center fixed;
+  background: url('../img/main.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+
+.snap {
+  background: url('../img/snap.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.card, .budget-input {
+  overflow: hidden;
+  margin: 300px 100px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.bg-transparant {
+  background-color: transparent;
+}
+
+.input-main {
+  font-family: "Roboto";
+  font-size: 15px!important;
+  text-align: center;
+}
+
+.button.button-main {
+  font-family: "Roboto";
+  margin-top: 50px;
+  width: 100px;
+  margin-left:25px;
 }

@@ -27,6 +27,11 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('MainCtrl', function ($scope) {
+.controller('MainCtrl', function ($scope, $state) {
+    $scope.snap = function() {
+      $state.go('snap');
+    }
+})
+.controller('SnapCtrl', function($state) {
 
-});
+  });

@@ -35,12 +35,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       templateUrl: 'templates/main.html',
       controller: 'MainCtrl'
   })
+  .state('snap', {
+      url: '/snap',
+      templateUrl: 'templates/snap.html',
+      controller: 'SnapCtrl'
+  })
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
+
+
 
   // Each tab has its own nav history stack:
 
