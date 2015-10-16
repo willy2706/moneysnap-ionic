@@ -47,7 +47,6 @@
   font-family: "Roboto";
   margin-top: 50px;
   width: 130px;
-  /*right:0vw;*/
   margin-left:20px;
   background: transparent;
   border-width: 2px;
@@ -72,5 +71,10 @@
   position: fixed;
   top: 550px;
   z-index: 999;
+}
+
+.orange-bar {
+  background-color: #fb8e27!important;
+  border-color: #fb8e27 !important;
 }
 

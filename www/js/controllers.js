@@ -52,6 +52,23 @@ angular.module('starter.controllers', [])
         console.err(err);
       });
     };
+
+    $scope.cb = function(){
+      $state.go('categories')
+    }
+    Camera.getPicture({
+      quality: 75,
+      targetWidth: 720,
+      //targetHeight: 1024,
+      correctOrientation: true,
+      saveToPhotoAlbum: false
+    }).then(function (imageURI) {
+      $scope.url = imageURI;
+      $scope.showinput = true;
+      console.log(imageURI);
+    }, function (err) {
+      console.err(err);
+    });
   })
 
   .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
