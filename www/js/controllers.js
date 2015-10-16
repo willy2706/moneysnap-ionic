@@ -32,6 +32,24 @@ angular.module('starter.controllers', [])
       $state.go('snap');
     }
 })
-.controller('SnapCtrl', function($state) {
-
+.controller('SnapCtrl', function($scope, $state, Camera, $window) {
+    $scope.wd = {};
+    $scope.url = 'img/snap.png';
+    $scope.showinput = false;
+    $scope.img = 'http://placekitten.com/g/250/300';
+    $scope.getPhoto = function() {
+      Camera.getPicture({
+        quality: 75,
+        targetWidth: 720,
+        //targetHeight: 1024,
+        correctOrientation: true,
+        saveToPhotoAlbum: false
+      }).then(function (imageURI) {
+        $scope.url = imageURI;
+        $scope.showinput = true;
+        console.log(imageURI);
+      }, function (err) {
+        console.err(err);
+      });
+    };
   });

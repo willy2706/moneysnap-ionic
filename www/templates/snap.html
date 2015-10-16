@@ -1,6 +1,11 @@
-<ion-view class="snap">
+<ion-view class="snap" pukimak>
   <ion-content scroll="false">
-    <div class="button button-go"></div>
-    <!--<div class="button button-icon assertive ion-plus-circled button-floating-action"></div>-->
+    <div ng-show = "showinput" class="list price-input bg-transparant">
+      <label class="item item-input bg-transparant">
+        <input type="number" placeholder="Input price" class="input-price">
+      </label>
+    </div>
+    <div class="button button-snap" ng-click="getPhoto()" resize ng-style="{{style()}}" style="top : {{top}}px; right: {{right}}px"></div>
+    <div class="button button-go" resize-go ng-style="{{style()}}" style="top : {{top1}}px; right: {{right1}}px"></div>
   </ion-content>
 </ion-view>

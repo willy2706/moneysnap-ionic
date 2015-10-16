@@ -19,35 +19,41 @@
   background-color: #fff;
 }
 
+.price-input {
+  overflow: hidden;
+  margin: 100px 50px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+
 .bg-transparant {
   background-color: transparent;
 }
 
 .input-main {
   font-family: "Roboto";
-  font-size: 15px!important;
+  font-size: 20px!important;
+  text-align: center;
+}
+
+.input-price {
+  font-family: "Roboto";
+  font-size: 30px!important;
   text-align: center;
 }
 
 .button.button-main {
   font-family: "Roboto";
   margin-top: 50px;
-  width: 150px;
-  margin-left:30px;
+  width: 130px;
+  /*right:0vw;*/
+  margin-left:20px;
   background: transparent;
   border-width: 2px;
   border-color: #fb8e27;
   color: #fb8e27;
 }
-
-.button-floating-action {
-  position: fixed;
-  top: calc(90vh - 50px);
-  right: 2vw;
-  z-index: 999;
-  text-shadow: 5px 5px 5px #888888;
-}
-
 
 .button-go {
   min-width: 57px;
@@ -55,8 +61,16 @@
   border: none;
   background: url('../img/add.png');
   position: fixed;
-  top: calc(90vh - 50px);
-  right: 4vw;
+  z-index: 999;
+}
+
+.button-snap {
+  min-width: 42px;
+  min-height: 41px;
+  border: none;
+  background: url('../img/snapicon.png');
+  position: fixed;
+  top: 550px;
   z-index: 999;
 }
 
