@@ -40,6 +40,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services' , 
       templateUrl: 'templates/snap.html',
       controller: 'SnapCtrl'
   })
+  .state('categories', {
+    url: '/categories',
+    templateUrl: 'templates/categories.html',
+    controller: 'CategoriesCtrl'
+  })
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',

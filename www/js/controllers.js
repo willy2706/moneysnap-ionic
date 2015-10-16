@@ -52,4 +52,7 @@ angular.module('starter.controllers', [])
         console.err(err);
       });
     };
+  })
+
+  .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
   });
