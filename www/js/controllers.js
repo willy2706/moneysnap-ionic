@@ -78,9 +78,13 @@ angular.module('starter.controllers', [])
 .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
 })
 
-.controller('AnalyzeCtrl', function($scope, $state) {
+.controller('AnalyzeCtrl', function($scope, $state, $ionicPopover) {
     $scope.onSwipeRightAnalyze = function () {
       $state.go('main');
-    }
-  })
-;
+    };
+    $ionicPopover.fromTemplateUrl('templates/popover.html', {
+      scope: $scope,
+    }).then(function(popover) {
+      $scope.popover = popover;
+    });
+  });

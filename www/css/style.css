@@ -78,3 +78,11 @@
   border-color: #fb8e27 !important;
 }
 
+.arrowanalyze {
+  background: url('../img/arrow.png');
+  width: 18px;
+  height: 17px;
+  margin-top: 6px;
+  border: none;
+  margin-left: 10px;
+}
