@@ -31,6 +31,10 @@ angular.module('starter.controllers', [])
     $scope.snap = function() {
       $state.go('snap');
     }
+
+    $scope.onSwipeLeft = function() {
+      $state.go('analyze');
+    }
 })
 .controller('SnapCtrl', function($scope, $state, Camera, $window) {
     $scope.wd = {};
@@ -71,5 +75,12 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
-  });
+.controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
+})
+
+.controller('AnalyzeCtrl', function($scope, $state) {
+    $scope.onSwipeRightAnalyze = function () {
+      $state.go('main');
+    }
+  })
+;

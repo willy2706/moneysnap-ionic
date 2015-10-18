@@ -45,6 +45,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services' , 
     templateUrl: 'templates/categories.html',
     controller: 'CategoriesCtrl'
   })
+  .state('analyze', {
+    url: '/analyze',
+    templateUrl: 'templates/analyze.html',
+    controller: 'AnalyzeCtrl'
+  })
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
