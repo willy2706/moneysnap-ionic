@@ -8,7 +8,7 @@
   <ion-nav-bar class="bar-positive orange-bar">
     <ion-nav-buttons side="left">
       <!-- Toggle left side menu -->
-      <button class="arrowanalyze" ng-click="onSwipeRightAnalyze()"></button>
+      <button class="arrow" ng-click="onSwipeRightAnalyze()"></button>
     </ion-nav-buttons>
     <ion-nav-title>
       <h1 class="title" style="text-align: left">Budget Analysis</h1>
@@ -35,7 +35,7 @@
             <a class="item" href="http://learn.ionicframework.com/" target="_blank">
               Wishlist
             </a>
-            <a class="item" href="http://ionicframework.com/docs/" target="_blank">
+            <a class="item" ng-click="settings()">
               Settings
             </a>
             <a class="item" href="http://showcase.ionicframework.com/" target="_blank">

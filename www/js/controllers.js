@@ -87,4 +87,14 @@ angular.module('starter.controllers', [])
     }).then(function(popover) {
       $scope.popover = popover;
     });
-  });
+
+    $scope.settings = function() {
+      $state.go('settings');
+    }
+})
+.controller('SettingsCtrl', function ($scope, $state) {
+  $scope.onSwipeRightSettings = function(){
+
+  }
+})
+;
