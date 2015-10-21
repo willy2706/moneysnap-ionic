@@ -72,6 +72,16 @@
   z-index: 999;
 }
 
+
+.button-ok-blue {
+  min-width: 61px;
+  min-height: 59px;
+  border: none;
+  background: url('../img/okblue.png');
+  position: fixed;
+  z-index: 999;
+}
+
 .button-snap {
   min-width: 42px;
   min-height: 41px;
@@ -99,4 +109,20 @@
   background: url('../img/imgwishlist.png') no-repeat;
   height: 203px;
   width: 100%
+}
+
+.addwishlist {
+  background: url('../img/addwishlist.png') no-repeat;
+  height: 203px;
+  width: 100%
+}
+
+
+.cancel {
+  background: url('../img/cancel.png');
+  width: 4px;
+  height: 13px;
+  margin-top: 10px;
+  border: none;
+  margin-left: 10px;
 }

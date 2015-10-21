@@ -110,5 +110,16 @@ angular.module('starter.controllers', [])
   $scope.onSwipeRightWishlist = function(){
 
   }
+  $scope.addwishlist = function() {
+    $state.go('addwishlist')
+  }
+})
+.controller('AddWishlistCtrl', function ($scope, $state,$ionicPopover) {
+  $scope.cancel = function() {
+    $state.go('wishlist');
+  }
+  $scope.ok = function() {
+
+  }
 })
 ;
