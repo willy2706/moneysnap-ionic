@@ -1,4 +1,4 @@
-<ion-view on-swipe-right="onSwipeRightAnalyze()" style="background: none;">
+<ion-view on-swipe-right="onSwipeRightSettings()" style="background: none;">
   <!--<ion-header-bar class="bar-positive orange-bar">-->
   <!--<div class="buttons">-->
   <!--<button class="arrowanalyze" ng-click="onSwipeRightAnalyze()"></button>-->
@@ -25,13 +25,13 @@
       <h2>Change currency</h2>
       <p>Indonesian Rupiah (Rp)</p>
       </ion-item>
-      <ion-checkbox class="item-checkbox-right">
+      <ion-checkbox class="item-checkbox-right" ng-checked="true">
         Enable Passlock Code
       </ion-checkbox>
       <ion-item>
         Set passlock code
       </ion-item>
-      <ion-checkbox class="item-checkbox-right">
+      <ion-checkbox class="item-checkbox-right" ng-checked="true">
         <h2>Auto-save Pictures</h2>
         <p>Save snipped pictures to device</p>
       </ion-checkbox>

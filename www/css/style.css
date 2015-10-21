@@ -63,6 +63,15 @@
   z-index: 999;
 }
 
+.button-add-wishlist {
+  min-width: 61px;
+  min-height: 59px;
+  border: none;
+  background: url('../img/addblue.png');
+  position: fixed;
+  z-index: 999;
+}
+
 .button-snap {
   min-width: 42px;
   min-height: 41px;
@@ -85,4 +94,9 @@
   margin-top: 6px;
   border: none;
   margin-left: 10px;
+}
+.imgwishlist {
+  background: url('../img/imgwishlist.png') no-repeat;
+  height: 203px;
+  width: 100%
 }

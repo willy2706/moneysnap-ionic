@@ -91,9 +91,23 @@ angular.module('starter.controllers', [])
     $scope.settings = function() {
       $state.go('settings');
     }
+    $scope.wishlist = function() {
+      $state.go('wishlist');
+    }
 })
 .controller('SettingsCtrl', function ($scope, $state) {
   $scope.onSwipeRightSettings = function(){
+
+  }
+})
+
+.controller('WishlistCtrl', function ($scope, $state,$ionicPopover) {
+  $ionicPopover.fromTemplateUrl('templates/searchwishlist.html', {
+    scope: $scope,
+  }).then(function(popover) {
+    $scope.popover = popover;
+  });
+  $scope.onSwipeRightWishlist = function(){
 
   }
 })
