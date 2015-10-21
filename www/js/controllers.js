@@ -60,19 +60,19 @@ angular.module('starter.controllers', [])
     $scope.cb = function(){
       $state.go('categories')
     }
-    Camera.getPicture({
-      quality: 75,
-      targetWidth: 720,
-      //targetHeight: 1024,
-      correctOrientation: true,
-      saveToPhotoAlbum: false
-    }).then(function (imageURI) {
-      $scope.url = imageURI;
-      $scope.showinput = true;
-      console.log(imageURI);
-    }, function (err) {
-      console.err(err);
-    });
+    //Camera.getPicture({
+    //  quality: 75,
+    //  targetWidth: 720,
+    //  //targetHeight: 1024,
+    //  correctOrientation: true,
+    //  saveToPhotoAlbum: false
+    //}).then(function (imageURI) {
+    //  $scope.url = imageURI;
+    //  $scope.showinput = true;
+    //  console.log(imageURI);
+    //}, function (err) {
+    //  console.err(err);
+    //});
   })
 
 .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
@@ -122,7 +122,134 @@ angular.module('starter.controllers', [])
 
   }
 })
-  .controller('YourWishlistCtrl', function($scope, $state) {
+.controller('YourWishlistCtrl', function($scope, $state) {
 
-  })
+})
+.controller('AppCtrl', function ($scope, $state, $ionicModal, $timeout, $q) {
+  $scope.jsBuffer = {
+    Image: undefined
+  };
+  $scope.tt = 'b';
+  $scope.formControls =
+  {
+    captureEnabled : true,
+    liveRefreshEnabled : true
+  };
+  $scope.cameraPlus = null;
+  $scope.cameraPlus = ( cordova && cordova.plugins && cordova.plugins.CameraPlus ) ? cordova.plugins.CameraPlus : null;
+
+
+  window.ionic.Platform.ready(function() {
+    console.log('Ionic ready... Loading plugins.');
+    $scope.tt = 'a';
+    $scope.cameraPlus = ( cordova && cordova.plugins && cordova.plugins.CameraPlus ) ? cordova.plugins.CameraPlus : null;
+    $scope.switchCapture(true);
+  });
+
+
+  $scope.switchCapture = function (enabled)
+  {
+    if (enabled)
+    {
+      $scope.startCapture();
+    }
+    else
+    {
+      $scope.stopCapture();
+    }
+  };
+
+  $scope.startCapture = function() {
+    if ( $scope.cameraPlus ) {
+      // call this API to stop web server
+      $scope.cameraPlus.startCamera(function(){
+        console.log('Capture Started');
+        $scope.tt = 'ok';
+        // already call once to fill the buffer since it's always delayed of 1 frame...
+        $scope.refreshPreview();
+      },function( error ){
+        console.log('CameraServer StartCapture failed: ' + error);
+        $scope.tt = 'CameraServer StartCapture failed: ' + error;
+      });
+    } else {
+      $scope.tt = 'err1';
+      console.log('CameraServer StartCapture: CameraPlus plugin not available/ready.');
+    }
+  };
+
+  $scope.stopCapture = function() {
+
+    if ( $scope.cameraPlus ) {
+      // call this API to stop web server
+      $scope.cameraPlus.stopCamera(function(){
+        console.log('Capture Stopped');
+      },function( error ){
+        console.log('CameraServer StopCapture failed: ' + error);
+      });
+    } else {
+      console.log('CameraServer StopCapture: CameraPlus plugin not available/ready.');
+    }
+  };
+
+  $scope.switchLiveRefresh = function (enabled)
+  {
+    //if (enabled)
+    //{
+    $scope.asyncGetImage().then();
+    //}
+    //else
+    //{
+    //  // stops automatically when !$scope.formControls.liveRefreshEnabled
+    //}
+  };
+  $scope.asyncGetImage = function() {
+    return $q(function(resolve, reject) {
+
+      $scope.cameraPlus.getJpegImage(function(jpgData)
+      {
+        $scope.jsBuffer.Image = jpgData;
+        //if ($scope.jsBuffer.Image != jpgData)
+        //{
+        //  $scope.jsBuffer.Image = jpgData;
+        //}
+        //else
+        //{
+        //  // it's the same image, we trig the refresh manually.
+        //  $scope.refreshPreview();
+        //}
+
+        resolve(true);
+
+      }, function()
+      {
+        console.log('getImage failed');
+        reject('getImage failed');
+      });
+    });
+  };
+
+  $scope.getImage = function() {
+    $scope.tt = 'called';
+    $scope.asyncGetImage().then(function()
+    {
+      if (!$scope.$$phase) {
+        $scope.$apply();
+      }
+    });
+  };
+
+  $scope.refreshPreview = function () {
+    //console.log("refreshPreview");
+    if ($scope.formControls.liveRefreshEnabled) {
+      setTimeout(function () {
+        $scope.$apply(function () {
+          $scope.asyncGetImage().then();
+        });
+      }, 40);
+    }
+  };
+  $scope.switchCapture(true);
+
+})
+
 ;
