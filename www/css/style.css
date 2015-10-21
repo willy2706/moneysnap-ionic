@@ -58,6 +58,7 @@
   min-width: 57px;
   min-height: 56px;
   border: none;
+  border-radius: 50%;
   background: url('../img/add.png');
   position: fixed;
   z-index: 999;
@@ -67,6 +68,7 @@
   min-width: 61px;
   min-height: 59px;
   border: none;
+  border-radius: 50%;
   background: url('../img/addblue.png');
   position: fixed;
   z-index: 999;
@@ -77,6 +79,7 @@
   min-width: 61px;
   min-height: 59px;
   border: none;
+  border-radius: 50%;
   background: url('../img/okblue.png');
   position: fixed;
   z-index: 999;
@@ -86,6 +89,7 @@
   min-width: 42px;
   min-height: 41px;
   border: none;
+  border-radius: 50%;
   background: url('../img/snapicon.png');
   position: fixed;
   top: 550px;
@@ -115,6 +119,16 @@
   background: url('../img/addwishlist.png') no-repeat;
   height: 203px;
   width: 100%
+}
+
+.categories-icon {
+  background: url('../img/category_food.png') no-repeat;
+  height: 40px;
+  width: 51px;
+  margin-left: -47px;
+  z-index: 999;
+  position: absolute;
+  margin-top: -9px;
 }
 
 

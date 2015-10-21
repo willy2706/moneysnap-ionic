@@ -122,4 +122,7 @@ angular.module('starter.controllers', [])
 
   }
 })
+  .controller('YourWishlistCtrl', function($scope, $state) {
+
+  })
 ;
