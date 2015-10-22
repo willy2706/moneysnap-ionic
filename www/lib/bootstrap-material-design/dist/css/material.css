@@ -7194,8 +7194,8 @@ fieldset[disabled] .navbar .btn-link:focus {
 .tooltip.in {
   opacity: 1;
 }
-.popover .arrow,
-.tooltip .arrow,
+.popover .arrow_left,
+.tooltip .arrow_left,
 .popover .tooltip-arrow,
 .tooltip .tooltip-arrow {
   display: none;

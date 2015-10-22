@@ -1,4 +1,4 @@
-<ion-view pukimak on-swipe-right="onSwipeRightWishtlist()" style="background: none;">
+<ion-view pukimak on-swipe-right="expenses()" on-swipe-left="analyze()" style="background: none;">
   <!--<ion-header-bar class="bar-positive orange-bar">-->
   <!--<div class="buttons">-->
   <!--<button class="arrowanalyze" ng-click="onSwipeRightAnalyze()"></button>-->
@@ -8,7 +8,7 @@
   <ion-nav-bar class="bar-positive orange-bar">
     <ion-nav-buttons side="left">
       <!-- Toggle left side menu -->
-      <button class="arrow" ng-click="onSwipeRightWishtlist()"></button>
+      <button class="arrow_left" ng-click="onSwipeRightWishtlist()"></button>
     </ion-nav-buttons>
     <ion-nav-title>
       <h1 class="title" style="text-align: left">Wishtlist</h1>

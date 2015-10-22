@@ -32,8 +32,11 @@ angular.module('starter.controllers', [])
       $state.go('snap');
     }
 
-    $scope.onSwipeLeft = function() {
+    $scope.analyze = function() {
       $state.go('analyze');
+    }
+    $scope.expenses = function() {
+      $state.go('expenses');
     }
 })
 .controller('SnapCtrl', function($scope, $state, Camera, $window) {
@@ -55,6 +58,14 @@ angular.module('starter.controllers', [])
       }, function (err) {
         console.err(err);
       });
+    };
+
+    $scope.expenses = function() {
+      $state.go('expenses')
+    };
+
+    $scope.analyze = function() {
+      $state.go('analyze');
     };
 
     $scope.cb = function(){
@@ -79,8 +90,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AnalyzeCtrl', function($scope, $state, $ionicPopover) {
-    $scope.onSwipeRightAnalyze = function () {
-      $state.go('main');
+    $scope.snap = function () {
+      $state.go('snap');
     };
     $ionicPopover.fromTemplateUrl('templates/popover.html', {
       scope: $scope,
@@ -107,9 +118,15 @@ angular.module('starter.controllers', [])
   }).then(function(popover) {
     $scope.popover = popover;
   });
-  $scope.onSwipeRightWishlist = function(){
 
+  $scope.expenses = function(){
+    $state.go('expenses');
   }
+
+  $scope.analyze = function() {
+    $state.go('analyze');
+  }
+
   $scope.addwishlist = function() {
     $state.go('addwishlist')
   }
@@ -124,6 +141,15 @@ angular.module('starter.controllers', [])
 })
 .controller('YourWishlistCtrl', function($scope, $state) {
 
+})
+.controller('ExpensesCtrl', function($scope, $state) {
+    $scope.snap = function() {
+      $state.go('snap');
+    }
+
+    $scope.wishlist = function() {
+      $state.go('wishlist');
+    }
 })
 .controller('AppCtrl', function ($scope, $state, $ionicModal, $timeout, $q) {
   $scope.jsBuffer = {

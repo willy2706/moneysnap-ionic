@@ -101,7 +101,7 @@
   border-color: #fb8e27 !important;
 }
 
-.arrow {
+.arrow_left {
   background: url('../img/arrow_left.png');
   width: 18px;
   height: 17px;
@@ -109,6 +109,16 @@
   border: none;
   margin-left: 10px;
 }
+
+.arrow_right {
+  background: url('../img/arrow_right.png');
+  width: 18px;
+  height: 17px;
+  margin-top: 6px;
+  border: none;
+  margin-left: 10px;
+}
+
 .imgwishlist {
   background: url('../img/imgwishlist.png') no-repeat;
   height: 203px;

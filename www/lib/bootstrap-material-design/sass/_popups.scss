@@ -10,16 +10,16 @@
 }
 
 .popover, .tooltip {
-    &.left .arrow:after, &.left .tooltip-arrow {
+    &.left .arrow_left:after, &.left .tooltip-arrow {
         border-left-color: #323232;
     }
-    &.right .arrow:after, &.right .tooltip-arrow {
+    &.right .arrow_left:after, &.right .tooltip-arrow {
         border-right-color: #323232;
     }
-    &.top .arrow:after, &.top .tooltip-arrow {
+    &.top .arrow_left:after, &.top .tooltip-arrow {
         border-top-color: #323232;
     }
-    &.bottom .arrow:after, &.bottom .tooltip-arrow {
+    &.bottom .arrow_left:after, &.bottom .tooltip-arrow {
         border-bottom-color: #323232;
     }
 }
