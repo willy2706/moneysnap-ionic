@@ -34,6 +34,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services' , 
     templateUrl: 'templates/m.html',
     controller: 'AppCtrl'
   })
+  .state('expenses', {
+    url: '/expenses',
+    templateUrl: 'templates/expenses.html',
+    controller: 'ExpensesCtrl'
+  })
   .state('main', {
       url: '/main',
       templateUrl: 'templates/main.html',

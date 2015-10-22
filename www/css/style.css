@@ -121,8 +121,47 @@
   width: 100%
 }
 
-.categories-icon {
+.categories-food {
   background: url('../img/category_food.png') no-repeat;
+  height: 40px;
+  width: 51px;
+  margin-left: -47px;
+  z-index: 999;
+  position: absolute;
+  margin-top: -9px;
+}
+
+.categories-gadget {
+  background: url('../img/gadget.png') no-repeat;
+  height: 40px;
+  width: 51px;
+  margin-left: -47px;
+  z-index: 999;
+  position: absolute;
+  margin-top: -9px;
+}
+.categories-entertainment {
+  background: url('../img/entertainment.png') no-repeat;
+  height: 40px;
+  width: 51px;
+  margin-left: -47px;
+  z-index: 999;
+  position: absolute;
+  margin-top: -9px;
+}
+
+.categories-clothes {
+  background: url('../img/clothes.png') no-repeat;
+  height: 40px;
+  width: 51px;
+  margin-left: -47px;
+  z-index: 999;
+  position: absolute;
+  margin-top: -9px;
+}
+
+.categories-cart {
+  background: url('../img/cart.png') no-repeat;
   height: 40px;
   width: 51px;
   margin-left: -47px;
