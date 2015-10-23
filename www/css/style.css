@@ -37,6 +37,15 @@
   border-bottom-width: thick;
 }
 
+.label-input-snap {
+  border-top: none;
+  border-bottom-color: #a59e9d;
+  border-bottom-width: thick;
+  background: rgba(0,0,0,0.3);
+}
+
+
+
 .input-main {
   font-family: "Roboto";
   font-size: 20px!important;
@@ -48,7 +57,12 @@
   font-family: "Roboto";
   font-size: 30px!important;
   text-align: center;
+  font-weight: bold;
+  line-height: 22px!important;
+  color: white!important;
 }
+
+#inputprice::-webkit-input-placeholder { color:white; }
 
 .button.button-main {
   font-family: "Roboto";
