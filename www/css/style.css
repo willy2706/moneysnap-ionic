@@ -191,6 +191,24 @@
   margin-right: 10px;
 }
 
+.gtstatistics {
+  background: url('../img/iconstatistics.png') no-repeat;
+  width: 44px;
+  height: 44px;
+  margin-top: 0px;
+  border: none;
+  zoom: 70%;
+}
+
+.gtexpenses {
+  background: url('../img/iconexpenses.png') no-repeat;
+  width: 44px;
+  height: 44px;
+  margin-top: 0px;
+  border: none;
+  zoom: 70%;
+}
+
 .gtcamera {
   background: url('../img/iconcamera.png') no-repeat;
   width: 44px;
