@@ -42,7 +42,7 @@ angular.module('starter.controllers', [])
 .controller('SnapCtrl', function($scope, $state, Camera, $window) {
     $scope.wd = {};
     $scope.url = 'img/snap.png';
-    $scope.showinput = true;
+    $scope.showinput = false;
     $scope.img = 'http://placekitten.com/g/250/300';
     $scope.getPhoto = function() {
       Camera.getPicture({
