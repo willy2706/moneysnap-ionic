@@ -63,6 +63,20 @@
   font-weight: bold;
 }
 
+
+.button.button-reminder-ok {
+  font-family: "Roboto";
+  margin-top: 450px;
+  width: 130px;
+  margin-left: 120px;
+  background: #fb8e27;
+  border-width: 2px;
+  border-color: #fb8e27;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+
 .button-go-left {
   min-width: 39px;
   min-height: 38px;
