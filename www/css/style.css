@@ -14,7 +14,7 @@
 
 .card, .budget-input {
   overflow: hidden;
-  margin: 300px 100px;
+  margin: 300px 50px;
   border-radius: 2px;
   background-color: #fff;
 }
@@ -31,10 +31,17 @@
   background-color: transparent;
 }
 
+.label-input {
+  border-top: none;
+  border-bottom-color: #a59e9d;
+  border-bottom-width: thick;
+}
+
 .input-main {
   font-family: "Roboto";
   font-size: 20px!important;
   text-align: center;
+  font-weight: bold;
 }
 
 .input-price {
@@ -47,11 +54,13 @@
   font-family: "Roboto";
   margin-top: 50px;
   width: 130px;
-  margin-left:20px;
-  background: transparent;
+  margin-left: 70px;
+  background: #fb8e27;
   border-width: 2px;
   border-color: #fb8e27;
-  color: #fb8e27;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .button-go-left {
