@@ -79,6 +79,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services' , 
     templateUrl: 'templates/yourwishlist.html',
     controller: 'YourWishlistCtrl'
   })
+  .state('reminder', {
+    url: '/reminder',
+    templateUrl: 'templates/reminder.html',
+    controller: 'ReminderCtrl'
+  })
+  .state('budget', {
+    url: '/budget',
+    templateUrl: 'templates/budget.html',
+    controller: 'BudgetCtrl'
+  })
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',

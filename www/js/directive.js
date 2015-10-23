@@ -8,8 +8,8 @@ angular.module('starter.directives', [])
     scope.$watch(scope.getWindowDimensions, function (newValue, oldValue) {
       scope.windowHeight = newValue.h;
       scope.windowWidth = newValue.w;
-      scope.top = newValue.h *0.85;
-      scope.right = newValue.w*0.45;
+      scope.top = newValue.h *0.875;
+      scope.right = newValue.w*0.4375;
       scope.style = function () {
 
       };
@@ -28,10 +28,16 @@ angular.module('starter.directives', [])
       return { 'h': w.height(), 'w': w.width() };
     };
     scope.$watch(scope.getWindowDimensions, function (newValue, oldValue) {
+
       scope.windowHeight = newValue.h;
       scope.windowWidth = newValue.w;
-      scope.top1 = newValue.h *0.85;
-      scope.right1 = newValue.w*0.1;
+      scope.top2 = newValue.h * 0.875;
+      scope.right2 = newValue.w * 0.82;
+      scope.top3 = newValue.h * 0.875;
+      scope.right3 = newValue.w * 0.08;
+
+      scope.top1 = newValue.h *0.875;
+      scope.right1 = newValue.w*0.05;
       scope.style = function () {
 
       };

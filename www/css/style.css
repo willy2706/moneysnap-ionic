@@ -54,6 +54,24 @@
   color: #fb8e27;
 }
 
+.button-go-left {
+  min-width: 39px;
+  min-height: 38px;
+  border: none;
+  background: url('../img/arrowsnapleft.png') no-repeat;
+  position: fixed;
+  z-index: 999;
+}
+
+.button-go-right {
+  min-width: 39px;
+  min-height: 38px;
+  border: none;
+  background: url('../img/arrowsnapright.png') no-repeat;
+  position: fixed;
+  z-index: 999;
+}
+
 .button-go {
   min-width: 57px;
   min-height: 56px;
@@ -201,8 +219,7 @@
   margin: auto;
 }
 
-.live-grab
-{
+.live-grab {
   margin-top: 0px;
   border: 1px solid black;
   /*width: auto;*/
@@ -212,4 +229,21 @@
   /*min-height: 50px;*/
   height: 640px;
   width: 360px;
+}
+
+.reminderbg {
+  background: url('../img/reminder.png') no-repeat center center fixed;
+}
+
+.budgetbg {
+  background: url('../img/budget.png') no-repeat center center fixed;
+}
+
+.expensesdetail {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.wishlistdetail {
+  margin: 15px;
 }

@@ -60,6 +60,10 @@ angular.module('starter.controllers', [])
       });
     };
 
+    $scope.budget = function() {
+      $state.go('budget')
+    }
+
     $scope.expenses = function() {
       $state.go('expenses')
     };
@@ -87,8 +91,25 @@ angular.module('starter.controllers', [])
   })
 
 .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
+  $scope.reminder = function() {
+    $state.go('reminder')
+  }
 })
+.controller('ReminderCtrl', function($scope, $state, Camera, $window) {
+  $scope.snap = function() {
+    console.log("asdf")
 
+    $state.go('snap');
+  }
+    console.log("asdf")
+})
+.controller('BudgetCtrl', function($scope, $state, Camera, $window) {
+    $scope.snap = function() {
+      $state.go('snap');
+
+    }
+
+})
 .controller('AnalyzeCtrl', function($scope, $state, $ionicPopover) {
     $scope.snap = function () {
       $state.go('snap');
@@ -136,7 +157,7 @@ angular.module('starter.controllers', [])
     $state.go('wishlist');
   }
   $scope.ok = function() {
-
+    $state.go('wishlist')
   }
 })
 .controller('YourWishlistCtrl', function($scope, $state) {
@@ -149,6 +170,15 @@ angular.module('starter.controllers', [])
 
     $scope.wishlist = function() {
       $state.go('wishlist');
+    }
+
+    $scope.expand = function(id) {
+      //console.log("sdf")
+      if ($('#'+id).children().length <= 2) {
+        $('#'+id).append('<img class="expensesdetail" src="img/detailexpenses.png"/>');
+      } else {
+        $('#'+id).children().last().remove()
+      }
     }
 })
 .controller('AppCtrl', function ($scope, $state, $ionicModal, $timeout, $q) {
