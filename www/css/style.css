@@ -78,6 +78,18 @@
 }
 
 
+.skip {
+  font-family: "Roboto";
+  margin-top: 50px;
+  width: 130px;
+  margin-left: 110px;
+  color: #fb8e27;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+
 .button.button-reminder-ok {
   font-family: "Roboto";
   margin-top: 450px;

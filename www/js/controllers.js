@@ -105,9 +105,7 @@ angular.module('starter.controllers', [])
 .controller('BudgetCtrl', function($scope, $state, Camera, $window) {
     $scope.snap = function() {
       $state.go('snap');
-
     }
-
 })
 .controller('AnalyzeCtrl', function($scope, $state, $ionicPopover) {
     $scope.snap = function () {
