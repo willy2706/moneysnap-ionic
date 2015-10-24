@@ -139,6 +139,14 @@ angular.module('starter.controllers', [])
     $scope.popover = popover;
   });
 
+  $scope.insert = function(id) {
+    if ($('#'+id).next().is('img')) {
+      $('#'+id).next().remove()
+    } else {
+      $('<img src="img/detailwishlist.png" class="wishlistdetail">').insertAfter($('#'+id));
+    }
+  }
+
   $scope.expenses = function(){
     $state.go('expenses');
   }
