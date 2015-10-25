@@ -112,8 +112,8 @@
 }
 
 .button-go-left {
-  min-width: 39px;
-  min-height: 38px;
+  min-width: 45px;
+  min-height: 35px;
   border: none;
   background: url('../img/arrowsnapleft.png') no-repeat;
   position: fixed;
@@ -121,8 +121,8 @@
 }
 
 .button-go-right {
-  min-width: 39px;
-  min-height: 38px;
+  min-width: 45px;
+  min-height: 35px;
   border: none;
   background: url('../img/arrowsnapright.png') no-repeat;
   position: fixed;
@@ -185,15 +185,6 @@
   margin-left: 10px;
 }
 
-.arrow_right {
-  background: url('../img/arrow_right.png');
-  width: 18px;
-  height: 17px;
-  margin-top: 6px;
-  border: none;
-  margin-left: 10px;
-}
-
 .gtl {
   margin-left: 10px;
 }
@@ -239,25 +230,34 @@
 }
 
 
-.imgwishlist {
-  background: url('../img/imgwishlist.png') no-repeat;
-  height: 203px;
+.wishlist {
+  height: 180px;
   width: 100%
 }
 
-.imgwishlist1 {
-  background: url('../img/newyork.png') no-repeat;
-  height: 170px;
-  width: 100%
+.wishlist1 {
+  background: url('../img/wishlist/wishlist-1.png') no-repeat;
 }
 
-
-.imgwishlist2 {
-  background: url('../img/canada.png') no-repeat;
-  height: 203px;
-  width: 100%
+.wishlist2 {
+  background: url('../img/wishlist/wishlist-2.png') no-repeat;
 }
 
+.wishlist3 {
+  background: url('../img/wishlist/wishlist-3.png') no-repeat;
+}
+
+.wishlist4 {
+  background: url('../img/wishlist/wishlist-4.png') no-repeat;
+}
+
+.wishlist5 {
+  background: url('../img/wishlist/wishlist-5.png') no-repeat;
+}
+
+.wishlist6 {
+  background: url('../img/wishlist/wishlist-6.png') no-repeat;
+}
 
 .addwishlist {
   background: url('../img/addwishlist.png') no-repeat;
@@ -265,9 +265,8 @@
   width: 100%
 }
 
-.categories-food {
-  background: url('../img/category_food.png') no-repeat;
-  height: 40px;
+.categories {
+  height: 41px;
   width: 51px;
   margin-left: -47px;
   z-index: 999;
@@ -275,55 +274,78 @@
   margin-top: -9px;
 }
 
-.categories-gadget {
-  background: url('../img/gadget.png') no-repeat;
-  height: 40px;
-  width: 51px;
-  margin-left: -47px;
-  z-index: 999;
-  position: absolute;
-  margin-top: -9px;
-}
-.categories-entertainment {
-  background: url('../img/entertainment.png') no-repeat;
-  height: 40px;
-  width: 51px;
-  margin-left: -47px;
-  z-index: 999;
-  position: absolute;
-  margin-top: -9px;
+.category-accessories {
+  background: url('../img/category/accesories.png') no-repeat;
 }
 
-.categories-transportation {
-  background: url('../img/transportation.png') no-repeat;
-  height: 40px;
-  width: 51px;
-  margin-left: -47px;
-  z-index: 999;
-  position: absolute;
-  margin-top: -9px;
+
+.category-books {
+  background: url('../img/category/books.png') no-repeat;
 }
 
-.categories-clothes {
-  background: url('../img/clothes.png') no-repeat;
-  height: 40px;
-  width: 51px;
-  margin-left: -47px;
-  z-index: 999;
-  position: absolute;
-  margin-top: -9px;
+.category-car {
+  background: url('../img/category/car.png') no-repeat;
 }
 
-.categories-cart {
-  background: url('../img/cart.png') no-repeat;
-  height: 40px;
-  width: 51px;
-  margin-left: -47px;
-  z-index: 999;
-  position: absolute;
-  margin-top: -9px;
+.category-clothes {
+  background: url('../img/category/clothes.png') no-repeat;
 }
 
+.category-computer {
+  background: url('../img/category/computer.png') no-repeat;
+}
+
+.category-food {
+  background: url('../img/category/food.png') no-repeat;
+}
+
+.category-groceries {
+  background: url('../img/category/groceries.png') no-repeat;
+}
+
+.category-handphone {
+  background: url('../img/category/handphone.png') no-repeat;
+}
+
+.category-hobbies {
+  background: url('../img/category/hobbies.png') no-repeat;
+}
+
+.category-leisure {
+  background: url('../img/category/leisure.png') no-repeat;
+}
+
+.category-other {
+  background: url('../img/category/other.png') no-repeat;
+}
+
+.category-shoes {
+  background: url('../img/category/shoes.png') no-repeat;
+}
+
+.category-stationary {
+  background: url('../img/category/stationary.png') no-repeat;
+}
+
+.category-toiletary {
+  background: url('../img/category/toiletary.png') no-repeat;
+}
+
+.category-transportation {
+  background: url('../img/category/transportation.png') no-repeat;
+}
+
+.category-travel {
+  background: url('../img/category/travel.png') no-repeat;
+}
+
+.category-treatment {
+  background: url('../img/category/treatment.png') no-repeat;
+}
+
+.category-utilites {
+  background: url('../img/category/utilities.png') no-repeat;
+}
 
 .cancel {
   background: url('../img/cancel.png');
