@@ -130,13 +130,16 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('WishlistCtrl', function ($scope, $state,$ionicPopover) {
-  $ionicPopover.fromTemplateUrl('templates/searchwishlist.html', {
-    scope: $scope,
-  }).then(function(popover) {
-    $scope.popover = popover;
-  });
-
+.controller('WishlistCtrl', function ($scope, $state) {
+  $scope.show1 = false;
+  $scope.expand = function(field) {
+    if ($('#'+field).css('display') == 'none') {
+      //$('#'+field).hide();
+      $('#'+field).show();
+    } else {
+      $('#'+field).hide();
+    }
+  }
   $scope.insert = function(id) {
     if ($('#'+id).next().is('img')) {
       $('#'+id).next().remove()

@@ -1,10 +1,4 @@
 <ion-view on-swipe-right="expenses()" on-swipe-left="analyze()" style="background: none;" pukimak>
-  <!--<ion-header-bar class="bar-positive orange-bar">-->
-  <!--<div class="buttons">-->
-  <!--<button class="arrowanalyze" ng-click="onSwipeRightAnalyze()"></button>-->
-  <!--</div>-->
-  <!--<h1 class="title" style="text-align: left">Budget Analysis</h1>-->
-  <!--</ion-header-bar>-->
   <ion-nav-bar class="bar-positive orange-bar">
     <ion-nav-buttons side="left">
       <!-- Toggle left side menu -->
@@ -15,35 +9,33 @@
     </ion-nav-title>
     <ion-nav-buttons side="right">
       <button class="icondirection analysisright" ng-click="analyze()"></button>
-      <!--<button menu-toggle="right" ng-click="popover.show($event)" class="button button-icon icon ion-search"></button>-->
     </ion-nav-buttons>
   </ion-nav-bar>
 
   <ion-content>
-    <script id="templates/searchwishlist.html" type="text/ng-template">
-      <ion-popover-view style="background: none; height: 190px;">
-        <ion-content scroll="false">
-          <div class="list" style="color: black;">
-            <a class="item" href="http://learn.ionicframework.com/" target="_blank">
-              Wishlist
-            </a>
-            <a class="item" ng-click="settings()">
-              Settings
-            </a>
-            <a class="item" href="http://showcase.ionicframework.com/" target="_blank">
-              Reset all
-            </a>
-            <a class="item" href="http://ionicframework.com/submit-issue/" target="_blank">
-              Help & feedback
-            </a>
-          </div>
-        </ion-content>
-      </ion-popover-view>
-    </script>
     <ion-list>
-      <ion-item class="wishlist-common wishlist1" id = "item1" ng-click="insert('item1')"> <!--class="item-thumbnail-left"-->
+      <!--id = "item1" ng-click="insert('item1')"-->
+      <ion-item class="wishlist-common wishlist1" ng-click="expand('item1')" >
       </ion-item>
-
+      <div id="item1" style="display: none">
+        <div class="isequalto" style="display: block">
+          is equal to
+        </div>
+        <div class="itemequal" style="display: inline-block">
+          <div class="leftequal">22</div>
+          <div class="midequal">X</div>
+          <div class="rightequal">
+            <img src="img/expenses/food-1.png"/>
+          </div>
+        </div> <br/>
+        <div class="itemequal" style="display: inline-block">
+          <div class="leftequal">20</div>
+          <div class="midequal">X</div>
+          <div class="rightequal">
+            <img src="img/expenses/food-2.png"/>
+          </div>
+        </div>
+      </div>
       <ion-item class="wishlist-common wishlist2"  id = "item2" ng-click="insert('item2')"> <!--class="item-thumbnail-left"-->
       </ion-item>
       <ion-item class="wishlist-common wishlist3"  id = "item3" ng-click="insert('item3')"> <!--class="item-thumbnail-left"-->

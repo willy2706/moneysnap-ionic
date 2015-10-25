@@ -159,8 +159,8 @@
 }
 
 .button-snap {
-  min-width: 42px;
-  min-height: 41px;
+  min-width: 55px;
+  min-height: 53px;
   border: none;
   border-radius: 50%;
   background: url('../img/snapicon.png');
@@ -184,7 +184,7 @@
 }
 
 .icondirection {
-  width: 42px;
+  width: 37px;
   margin-top: 3px;
   border: none;
 }
@@ -339,6 +339,38 @@
   margin-left: 10px;
 }
 
+.isequalto {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  min-height: 40px;
+  margin-top: 20px;
+}
+
+.itemequal {
+  overflow: hidden;
+  margin-left: 80px;
+}
+
+.leftequal {
+  float: left;
+  font-size: 45px;
+  margin-top: 31px;
+  margin-right: 20px;
+}
+
+.midequal {
+  float: left;
+  font-size: 30px;
+  margin-top: 34px;
+  margin-right: 20px;
+}
+
+.rightequal {
+  float: right;
+  display: inline;
+}
 
 .live-container {
   text-align: center;
