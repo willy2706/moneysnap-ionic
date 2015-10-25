@@ -39,8 +39,8 @@ angular.module('starter.directives', [])
       scope.top1 = newValue.h *0.875;
       scope.right1 = newValue.w*0.05;
 
-      scope.settingtop = newValue.h * 0.05;
-      scope.settingright = newValue.w * 0.08;
+      scope.settingtop = newValue.h * 0.04;
+      scope.settingright = newValue.w * 0.06;
 
       scope.style = function () {
 

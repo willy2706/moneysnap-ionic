@@ -8,13 +8,13 @@
   <ion-nav-bar class="bar-positive orange-bar">
     <ion-nav-buttons side="left">
       <!-- Toggle left side menu -->
-      <button class="gtl gtexpenses" ng-click="expenses()"></button>
+      <button class="icondirection expensesleft" ng-click="expenses()"></button>
     </ion-nav-buttons>
     <ion-nav-title>
       <h1 class="title" style="text-align: center">Wishtlist</h1>
     </ion-nav-title>
     <ion-nav-buttons side="right">
-      <button class="gtl gtstatistics" ng-click="analyze()"></button>
+      <button class="icondirection analysisright" ng-click="analyze()"></button>
       <!--<button menu-toggle="right" ng-click="popover.show($event)" class="button button-icon icon ion-search"></button>-->
     </ion-nav-buttons>
   </ion-nav-bar>
@@ -41,7 +41,7 @@
       </ion-popover-view>
     </script>
     <ion-list>
-      <ion-item class=" wishlist-common wishlist1" id = "item1" ng-click="insert('item1')"> <!--class="item-thumbnail-left"-->
+      <ion-item class="wishlist-common wishlist1" id = "item1" ng-click="insert('item1')"> <!--class="item-thumbnail-left"-->
       </ion-item>
 
       <ion-item class="wishlist-common wishlist2"  id = "item2" ng-click="insert('item2')"> <!--class="item-thumbnail-left"-->

@@ -80,15 +80,13 @@
 
 .skip {
   font-family: "Roboto";
-  margin-top: 50px;
+  margin-top: 25px;
   width: 130px;
   margin-left: 110px;
   color: #fb8e27;
   font-size: 19px;
   font-weight: bold;
 }
-
-
 
 .button.button-reminder-ok {
   font-family: "Roboto";
@@ -185,52 +183,37 @@
   margin-left: 10px;
 }
 
-.gtl {
-  margin-left: 10px;
-}
-
-.gtwishlist {
-  background: url('../img/iconwishlist.png') no-repeat;
-  width: 44px;
-  height: 44px;
-  margin-top: 0px;
+.icondirection {
+  width: 42px;
+  margin-top: 3px;
   border: none;
-  zoom: 70%;
 }
 
-.gtr {
-  margin-right: 10px;
+.cameraleft {
+  background: url('../img/navigation/camera-button-left.png') no-repeat;
+}
+.cameraright {
+  background: url('../img/navigation/camera-button-right.png') no-repeat;
 }
 
-.gtstatistics {
-  background: url('../img/iconstatistics.png') no-repeat;
-  width: 44px;
-  height: 44px;
-  margin-top: 0px;
-  border: none;
-  zoom: 70%;
+.wishlistleft {
+  background: url('../img/navigation/wishlist-button-left.png') no-repeat;
 }
 
-.gtexpenses {
-  background: url('../img/iconexpenses.png') no-repeat;
-  width: 44px;
-  height: 44px;
-  margin-top: 0px;
-  border: none;
-  zoom: 70%;
+.wishlistright {
+  background: url('../img/navigation/wishlist-button-right.png') no-repeat;
 }
 
-.gtcamera {
-  background: url('../img/iconcamera.png') no-repeat;
-  width: 44px;
-  height: 44px;
-  margin-top: 0px;
-  border: none;
-  zoom: 70%;
+.expensesleft {
+  background: url('../img/navigation/expenses-button-left.png') no-repeat;
 }
 
+.analysisright {
+  background: url('../img/navigation/budget-analysis-button-right.png') no-repeat;
+}
 
-.wishlist {
+.wishlist-common {
+  margin: 0px;
   height: 180px;
   width: 100%
 }
