@@ -128,11 +128,10 @@
 }
 
 .button-go {
-  min-width: 57px;
-  min-height: 56px;
+  min-width: 75px;
+  min-height: 75px;
   border: none;
-  border-radius: 50%;
-  background: url('../img/add.png');
+  background: url('../img/floatingbutton/gorightbutton.png');
   position: fixed;
   z-index: 999;
 }
@@ -142,7 +141,7 @@
   min-height: 59px;
   border: none;
   border-radius: 50%;
-  background: url('../img/addblue.png');
+  background: url('../img/floatingbutton/plusbutton.png');
   position: fixed;
   z-index: 999;
 }
@@ -153,16 +152,16 @@
   min-height: 59px;
   border: none;
   border-radius: 50%;
-  background: url('../img/okblue.png');
+  background: url('../img/floatingbutton/okbutton.png');
   position: fixed;
   z-index: 999;
 }
 
 .select-categories-float-button {
   width: 50px;
-  padding: 28px;
+  padding: 38px;
   font-size: 40px;
-  background: url('../img/add.png');
+  background: url('../img/floatingbutton/gorightbutton.png');
   position: fixed;
   bottom: 20px; /* Adjust to where you want it */
   right: 20px; /* Adjust to where you want it */
@@ -172,9 +171,9 @@
 
 .add-wishlist-float-button {
   width: 50px;
-  padding: 30px;
+  padding: 38px;
   font-size: 40px;
-  background: url('../img/okblue.png');
+  background: url('../img/floatingbutton/okbutton.png');
   position: fixed;
   bottom: 20px; /* Adjust to where you want it */
   right: 20px; /* Adjust to where you want it */
@@ -183,13 +182,24 @@
 
 .float-button {
   width: 50px;
-  padding: 30px;
+  padding: 38px;
   font-size: 40px;
-  background: url('../img/addblue.png');
+  background: url('../img/floatingbutton/plusbutton.png');
   position: fixed;
   bottom: 20px; /* Adjust to where you want it */
   right: 20px; /* Adjust to where you want it */
   z-index: 9999;
+}
+
+.go-float-button {
+  width: 50px;
+  padding: 38px;
+  font-size: 40px;
+  background: url('../img/floatingbutton/gorightbutton.png');
+  position: fixed;
+  bottom: 22px;
+  right: 18px;
+  z-index: 9999
 }
 
 .float-button .height_fix {
@@ -465,4 +475,34 @@
 
 .wishlistdetail {
   margin: 15px;
+}
+
+.analyzebg {
+  background: none;
+  /*background: url('../img/analisa.png') no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+}
+
+.linechart {
+  margin: 10px 20px 0px 0px;
+}
+
+.piechart {
+  margin: 0px 20px 0px 11px;
+}
+
+.analyzeitem {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.textanalyzeline {
+  font-family: "Roboto";
+  font-size: 19px
+}
+
+.textanalyze {
+  color: #039688;
+  font-family: "Roboto";
+  font-size: 16px;
 }

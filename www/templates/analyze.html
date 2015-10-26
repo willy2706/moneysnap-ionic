@@ -11,26 +11,22 @@
     </ion-nav-buttons>
   </ion-nav-bar>
 
-  <ion-content style="background: url('img/analisa.png') no-repeat center center fixed;-webkit-background-size: cover;">
-    <script id="templates/popover.html" type="text/ng-template">
-      <ion-popover-view style="background: none; height: 190px;">
-        <ion-content scroll="false">
-          <div class="list" style="color: black;">
-            <a class="item" ng-click="wishlist()" target="_blank">
-              Wishlist
-            </a>
-            <a class="item" ng-click="settings()">
-              Settings
-            </a>
-            <a class="item" href="http://showcase.ionicframework.com/" target="_blank">
-              Reset all
-            </a>
-            <a class="item" href="http://ionicframework.com/submit-issue/" target="_blank">
-              Help & feedback
-            </a>
-          </div>
-        </ion-content>
-      </ion-popover-view>
-    </script>
+  <ion-content class="analyzebg" scroll="true">
+    <div class="analyzeitem">
+      <div class="textanalyzeline">
+        Expenses chart this month
+      </div>
+      <div>
+        <img class="linechart" src="img/chart/expenses-linechart.png"/>
+      </div>
+    </div>
+    <div class="analyzeitem">
+      <div class="textanalyze">
+        Percentage per categories
+      </div>
+      <div>
+        <img class="piechart" src="img/chart/expenses-piechart.png" />
+      </div>
+    </div>
   </ion-content>
 </ion-view>

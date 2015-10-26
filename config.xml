@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.moneysnapionic322902" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>moneysnap-ionic</name>
+  <name>Money Snap</name>
   <description>
         An Ionic Framework and Cordova project.
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
+  <author email="13512065@std.stei.itb.ac.id" href="http://ionicframework.com/">
       Ionic Framework Team
     </author>
   <content src="index.html"/>

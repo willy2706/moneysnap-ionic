@@ -109,11 +109,6 @@ angular.module('starter.controllers', [])
     $scope.snap = function () {
       $state.go('snap');
     };
-    $ionicPopover.fromTemplateUrl('templates/popover.html', {
-      scope: $scope,
-    }).then(function(popover) {
-      $scope.popover = popover;
-    });
 
     $scope.settings = function() {
       $state.go('settings');

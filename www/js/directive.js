@@ -41,7 +41,7 @@ angular.module('starter.directives', [])
       scope.top1 = newValue.h *0.875;
       scope.right1 = newValue.w*0.05;
 
-      scope.gotop = newValue.h *0.85;
+      scope.gotop = newValue.h *0.825;
       scope.goright = newValue.w*0.05;
 
       scope.settingtop = newValue.h * 0.04;
