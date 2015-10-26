@@ -1,4 +1,4 @@
-<ion-view style="background: none;" pukimak>
+<ion-view style="background: none;">
   <ion-nav-bar class="bar-positive orange-bar">
     <ion-nav-buttons side="left">
       <!-- Toggle left side menu -->
@@ -8,6 +8,13 @@
       <h1 class="title" style="text-align: left">New Wish</h1>
     </ion-nav-title>
   </ion-nav-bar>
+
+  <div class="add-wishlist-float-button">
+    <span class="height-fix">
+      <a ng-click="addwishlist()" class="content">
+      </a>
+    </span>
+  </div>
   <ion-content>
     <ion-list>
       <ion-item class="addwishlist">
@@ -21,6 +28,6 @@
         <input type="number" placeholder="Price">
       </label>
     </div>
-    <div class="button button-ok-blue" ng-click="ok()" resize-go ng-style="{{style()}}" style="top : {{top1}}px; right: {{right1}}px"></div>
+    <!--<div class="button button-ok-blue" ng-click="ok()" resize-go ng-style="{{style()}}" style="top : {{top1}}px; right: {{right1}}px"></div>-->
   </ion-content>
 </ion-view>

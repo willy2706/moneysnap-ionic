@@ -158,6 +158,19 @@
   z-index: 999;
 }
 
+
+.add-wishlist-float-button {
+  width: 50px;
+  padding: 30px;
+  font-size: 40px;
+  background: url('../img/okblue.png');
+  position: fixed;
+  bottom: 20px; /* Adjust to where you want it */
+  right: 20px; /* Adjust to where you want it */
+  z-index: 9999;
+}
+
+
 .float-button {
   width: 50px;
   padding: 28px;
