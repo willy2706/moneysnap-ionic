@@ -175,10 +175,11 @@ angular.module('starter.controllers', [])
 
     $scope.expand = function(id) {
       //console.log("sdf")
-      if ($('#'+id).children().length <= 2) {
-        $('#'+id).append('<img class="expensesdetail" src="img/detailexpenses.png"/>');
+      if ($('#'+id).css('display') == 'none') {
+        //$('#'+field).hide();
+        $('#'+id).show();
       } else {
-        $('#'+id).children().last().remove()
+        $('#'+id).hide();
       }
     }
 })
