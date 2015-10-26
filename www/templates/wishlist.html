@@ -11,7 +11,12 @@
       <button class="icondirection analysisright" ng-click="analyze()"></button>
     </ion-nav-buttons>
   </ion-nav-bar>
-
+  <div class="float-button">
+  <span class="height-fix">
+    <a ng-click="addwishlist()" class="content">
+    </a>
+  </span>
+  </div>
   <ion-content>
     <ion-list>
       <!--id = "item1" ng-click="insert('item1')"-->
@@ -47,6 +52,6 @@
       <ion-item class="wishlist-common wishlist6"  id = "item6" ng-click="insert('item6')" > <!--class="item-thumbnail-left"-->
       </ion-item>
     </ion-list>
-    <div class="button button-add-wishlist" ng-click="addwishlist()" resize-go resize style="top : {{top1}}px; right: {{right1}}px"></div>
+    <!--<div class="button button-add-wishlist" ng-click="addwishlist()" resize-go resize style="top : {{top1}}px; right: {{right1}}px"></div>-->
   </ion-content>
 </ion-view>
