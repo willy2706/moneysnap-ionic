@@ -91,16 +91,14 @@ angular.module('starter.controllers', [])
 
 .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
   $scope.reminder = function() {
+    console.log("ASDF")
     $state.go('reminder')
   }
 })
 .controller('ReminderCtrl', function($scope, $state, Camera, $window) {
   $scope.snap = function() {
-    console.log("asdf")
-
     $state.go('snap');
   }
-    console.log("asdf")
 })
 .controller('BudgetCtrl', function($scope, $state, Camera, $window) {
     $scope.snap = function() {

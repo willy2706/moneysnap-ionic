@@ -158,6 +158,17 @@
   z-index: 999;
 }
 
+.select-categories-float-button {
+  width: 50px;
+  padding: 28px;
+  font-size: 40px;
+  background: url('../img/add.png');
+  position: fixed;
+  bottom: 20px; /* Adjust to where you want it */
+  right: 20px; /* Adjust to where you want it */
+  z-index: 9999;
+}
+
 
 .add-wishlist-float-button {
   width: 50px;
@@ -170,12 +181,11 @@
   z-index: 9999;
 }
 
-
 .float-button {
   width: 50px;
-  padding: 28px;
+  padding: 30px;
   font-size: 40px;
-  background: url('../img/add.png');
+  background: url('../img/addblue.png');
   position: fixed;
   bottom: 20px; /* Adjust to where you want it */
   right: 20px; /* Adjust to where you want it */
@@ -389,6 +399,14 @@
 .itemequal {
   overflow: hidden;
   margin-left: 80px;
+}
+
+.leftequalsingle {
+  float: left;
+  font-size: 45px;
+  margin-top: 31px;
+  margin-right: 33px;
+  margin-left: 13px
 }
 
 .leftequal {

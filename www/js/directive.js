@@ -8,8 +8,10 @@ angular.module('starter.directives', [])
     scope.$watch(scope.getWindowDimensions, function (newValue, oldValue) {
       scope.windowHeight = newValue.h;
       scope.windowWidth = newValue.w;
-      scope.top = newValue.h *0.875;
-      scope.right = newValue.w*0.4375;
+
+      /*snap icon*/
+      scope.top = newValue.h *0.85;
+      scope.right = newValue.w*0.42;
       scope.style = function () {
 
       };
@@ -38,6 +40,9 @@ angular.module('starter.directives', [])
 
       scope.top1 = newValue.h *0.875;
       scope.right1 = newValue.w*0.05;
+
+      scope.gotop = newValue.h *0.85;
+      scope.goright = newValue.w*0.05;
 
       scope.settingtop = newValue.h * 0.04;
       scope.settingright = newValue.w * 0.06;
