@@ -92,7 +92,8 @@ angular.module('starter.controllers', [])
 .controller('CategoriesCtrl', function($scope, $state, Camera, $window) {
   $scope.reminder = function() {
     console.log("ASDF")
-    $state.go('reminder')
+    $state.transitionTo('reminder', null, {'reload':true})
+    //$state.go('reminder')
   }
 })
 .controller('ReminderCtrl', function($scope, $state, Camera, $window) {
